@@ -13,7 +13,11 @@ public class Main {
     private static final String MSG_COLOR = "Indica el color: ";
     private static final String MSG_DIM = "Indica la dimensio: ";
     private static final String MSG_COSTATS = "Indica la quantitat de costats: ";
-
+    private static final String MSG_DIMCOST = "Introdueix la dimensio d'un costat:";
+    private static final String MSG_DIMCOST2 = "Introdueix la dimensio d'un altre costat:";
+    private static final String MSG_LONG = "Introdueix la longitud: ";
+    private static final String MSG_ALT = "Introdueix la altura: ";
+    private static final String MSG_ANCH = "Introdueix la anchura: " ;
 
     public static void main(String[] args) {
 	// write your code here
@@ -28,7 +32,7 @@ public class Main {
         cadira ca = new cadira();
         quadrat nou = new quadrat();
         quadrat q = new quadrat();
-
+/*
         System.out.println("-------------Persona ASIX-------------");
         asix.setDni("53644949W");
         asix.setHeight(167);
@@ -118,5 +122,57 @@ public class Main {
         System.out.println(MSG_COSTATS);
         q.setCostats(sc.nextInt());
         System.out.println("El quadrat es de color "+q.getColor()+"\nLa seva dimensio es de "+q.getDimensio()+" cm\nI te "+q.getCostats()+" costats");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("-------------PROVA SCANNER I VALIDAR quadrat--------------");
+        System.out.println(MSG_COSTATS);
+        int costat = sc.nextInt();
+        while (costat <= 0){
+            System.out.println(MSG_COSTATS);
+            costat = sc.nextInt();
+        }
+        q.setCostats(costat);
+        System.out.println("El num de costats son: "+q.getCostats());
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println(MSG_DIMCOST);
+        int costat1 = sc.nextInt();
+        while (costat1 <= 0){
+            System.out.println(MSG_DIMCOST);
+            costat1 = sc.nextInt();
+        }
+        System.out.println(MSG_DIMCOST2);
+
+        int costat2 = sc.nextInt();
+        while (costat2 <= 0){
+            System.out.println(MSG_DIMCOST2);
+            costat2 = sc.nextInt();
+        }
+        int area = costat1 * costat2;
+        System.out.println("El area del quadrat es de: "+area+" cm");
+*/
+        Scanner sc = new Scanner(System.in);
+        System.out.println(MSG_LONG);
+        int lon = sc.nextInt();
+        while (lon <= 0){
+            System.out.println(MSG_LONG);
+            lon = sc.nextInt();
+        }
+
+        System.out.println(MSG_ALT);
+        int alt = sc.nextInt();
+        while (alt <= 0){
+            System.out.println(MSG_ALT);
+            alt = sc.nextInt();
+        }
+
+        System.out.println(MSG_ANCH);
+        int anch = sc.nextInt();
+        while (anch <= 0){
+            System.out.println(MSG_ANCH);
+            anch = sc.nextInt();
+        }
+        int volum = alt * lon * anch;
+        System.out.println("El volum del quadrat es de "+volum+" cm");
     }
 }
