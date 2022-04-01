@@ -5,7 +5,6 @@ public class gat {
     String color;
 
     public int getPotes(){
-        potes=3;
         return potes;
     }
 
@@ -14,7 +13,6 @@ public class gat {
     }
 
     public String getColor(){
-        color="taronja";
         return color;
     }
 
@@ -23,6 +21,6 @@ public class gat {
     }
 
     public void printgats(){
-        System.out.println("El seu color es: "+getColor()+"\nTe "+getPotes()+" potes");
+        System.out.println("El seu color es: "+this.getColor()+"\nTe "+this.getPotes()+" potes");
     }
 }

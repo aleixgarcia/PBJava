@@ -4,17 +4,16 @@ public class cotxe {
     int portes, rodes;
     String marca, modelo;
 
+    //get retorna (String) el valor del atributo 'marca'
     public String getMarca(){
-        marca="dacia";
         return this.marca;
     }
-
+    //set asigna el valor del argumento 'String m' al atributo 'marca'
     public void setMarca(String m){
         this.marca = m;
     }
 
     public String getModel(){
-        modelo = "sandero";
         return this.modelo;
     }
 
@@ -23,7 +22,6 @@ public class cotxe {
     }
 
     public int getPortes(){
-        portes = 5;
         return this.portes;
     }
 
@@ -32,7 +30,6 @@ public class cotxe {
     }
 
     public int getRodes(){
-        rodes = 4;
         return this.rodes;
     }
 
@@ -41,6 +38,6 @@ public class cotxe {
     }
 
     public void printcotxe(){
-        System.out.println(getMarca()+"\n"+getModel()+"\n"+getPortes()+"\n"+getRodes());
+        System.out.println("La marca del cotxe: "+this.getMarca()+"\nEl seu model: "+this.getModel()+"\nTe "+this.getPortes()+" portes\nTe "+this.getRodes()+" rodes");
     }
 }

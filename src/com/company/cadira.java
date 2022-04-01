@@ -5,7 +5,7 @@ public class cadira {
     String color;
 
     public int getPotes(){
-        potes=3;
+
         return potes;
     }
 
@@ -14,7 +14,7 @@ public class cadira {
     }
 
     public String getColor(){
-        color="marro";
+
         return color;
     }
 
@@ -23,6 +23,6 @@ public class cadira {
     }
 
     public void printcadira(){
-        System.out.println("El color de la cadira es: "+getColor()+"\nTe "+getPotes()+" potes");
+        System.out.println("El color de la cadira es: "+this.getColor()+"\nTe "+this.getPotes()+" potes");
     }
 }

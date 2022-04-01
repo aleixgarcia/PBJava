@@ -5,7 +5,6 @@ public class quadrat {
     String color;
 
     public String getColor(){
-        color = "blau";
         return color;
     }
 
@@ -14,7 +13,6 @@ public class quadrat {
     }
 
     public int getDimensio(){
-        dimensio = 40;
         return dimensio;
     }
 
@@ -23,7 +21,6 @@ public class quadrat {
     }
 
     public int getCostats(){
-        costats = 4;
         return costats;
     }
 

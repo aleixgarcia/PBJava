@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
-
-/*public class Persona {
+/*
+public class Person {
     String nom,cognom;
 
     public String getNom(){
@@ -28,16 +28,16 @@ import java.util.Scanner;
 
 /*String es un objeto, asi que empieza por mayus*/
 
-
 public class Person {
     String name, surname,dni;
     float height, widthPersona;
 
 
+
     /*getter retorna, asi que se indica tipo de dato*/
     /*name*/
     public String getName(){
-        name = "Aleix";
+
         return this.name;
     }
 
@@ -47,7 +47,7 @@ public class Person {
 
     /*surname*/
     public String getSurname(){
-        surname = "Garcia";
+
         return this.surname;
     }
 
@@ -57,7 +57,7 @@ public class Person {
 
     /*dni*/
     public String getDni(){
-        dni = "53644949W";
+
         return this.dni;
     }
 
@@ -67,7 +67,7 @@ public class Person {
 
     /*height*/
     public float getHeight(){
-        height = (float)1.65;
+
         return this.height;
     }
 
@@ -77,7 +77,7 @@ public class Person {
 
     /*widthPersona*/
     public float getWidthPersona(){
-        widthPersona = 80;
+
         return this.widthPersona;
     }
 
@@ -85,9 +85,11 @@ public class Person {
         this.widthPersona=w;
     }
 
+
     /*Printar los datos*/
     public void printNomCognom(){
-        System.out.println(getName()+"\n"+getSurname()+"\n"+getDni()+"\n"+getHeight()+"\n"+getWidthPersona());
+        System.out.println("El seu nom es: "+this.getName()+"\nEl seu cognom: "+this.getSurname()+"\nEl seu DNI: "+this.getDni()+"\nLa seva altura: "+this.getHeight()+"\nSu cadera: "+this.getWidthPersona());
     }
 }
+
 
